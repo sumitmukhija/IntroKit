@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IntroKit_Example' do
+  pod 'IntroKit', :path => '../'
+
+  target 'IntroKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
