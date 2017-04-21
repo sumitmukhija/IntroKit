@@ -103,7 +103,7 @@ public class IntroViewController: UIViewController {
             {
                 self.index = self.index - 1
                 rightBtnOutlet.hidden = true
-                self.dismissViewControllerAnimated(true, completion: { 
+                self.dismissViewControllerAnimated(true, completion: {
                   self.callBack(result: true);
                 })
                 return
@@ -119,7 +119,6 @@ public class IntroViewController: UIViewController {
             {
                 self.index = self.index + 1
                 leftBtnOutlet.hidden = true
-                print("Underflow")
                 return
             }
         }

@@ -16,13 +16,27 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18G-61-VQU">
+                                <rect key="frame" x="137" y="413" width="46" height="30"/>
+                                <state key="normal" title="Start Intro"/>
+                                <connections>
+                                    <action selector="startIntroTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MdS-Be-9Tt"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="18G-61-VQU" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Axg-z1-iSa"/>
+                            <constraint firstItem="18G-61-VQU" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="JbO-tb-1tw"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="18G-61-VQU" secondAttribute="bottom" constant="37" id="jgp-aH-juh"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="197" y="314"/>
+            <point key="canvasLocation" x="251" y="232"/>
         </scene>
         <!--End View Controller-->
         <scene sceneID="wfp-XM-4Cf">
@@ -55,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xoY-NV-Wc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="299" y="359"/>
+            <point key="canvasLocation" x="443" y="461"/>
         </scene>
     </scenes>
 </document>
