@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		9576D6791EAA43640090F4AC /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576D6781EAA43640090F4AC /* EndViewController.swift */; };
 		957A823D1EA9DEE60034ABB2 /* IntroKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957A823C1EA9DEE60034ABB2 /* IntroKit.framework */; };
 		957A823E1EA9DEE60034ABB2 /* IntroKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 957A823C1EA9DEE60034ABB2 /* IntroKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A9F7F987B45109C4E8A14308 /* Pods_IntroKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801FB127BFA77EBDE635BC87 /* Pods_IntroKit_Example.framework */; };
@@ -61,6 +62,7 @@
 		7A6D92AA434DA74BD0DAECF5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		801FB127BFA77EBDE635BC87 /* Pods_IntroKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntroKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92365273060CFD52A44BAE3F /* IntroKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IntroKit.podspec; path = ../IntroKit.podspec; sourceTree = "<group>"; };
+		9576D6781EAA43640090F4AC /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		957A823C1EA9DEE60034ABB2 /* IntroKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = IntroKit.framework; path = "/Users/Summit/Library/Developer/Xcode/DerivedData/IntroKit-gcrbzfkixhnuhofmitqgpeqouzes/Build/Products/Debug-iphonesimulator/IntroKit/IntroKit.framework"; sourceTree = "<absolute>"; };
 		D4F94BEF7A0E2F4A90D3DC36 /* Pods-IntroKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntroKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntroKit_Example/Pods-IntroKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D83CE08D3ED5AE539BEAD9A8 /* Pods-IntroKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntroKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntroKit_Example/Pods-IntroKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				9576D6781EAA43640090F4AC /* EndViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -381,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9576D6791EAA43640090F4AC /* EndViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

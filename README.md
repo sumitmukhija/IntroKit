@@ -21,7 +21,7 @@ it, simply add the following line to your Podfile:
 pod "IntroKit"
 ```
 
-##Documentation
+## Documentation
 To initialize the intro view controller<br>
 
 ```ruby
@@ -37,6 +37,14 @@ Alternate verbose initialization<br>
 ```
 
 Attributes
+
+<br>
+ Completion block to be called when all the intro cards are swiped. <i>(mandatory)</i>
+```ruby
+        textArray:[String]
+```
+
+<br>
 UIColor array of background colors
 ```ruby
         arrayOfColors: [UIColor]? 
@@ -50,6 +58,11 @@ Boolean that determines visibility of buttons on the left and right edge. The de
  Boolean that determines if the helper label on the first screen should be visible or not. Default is true
 ```ruby
         shouldShowSkipLabel:Bool?
+```
+<br>
+ Completion block to be called when all the intro cards are swiped. <i>(mandatory)</i>
+```ruby
+        completion: (result: Bool) -> Void
 ```
 
 

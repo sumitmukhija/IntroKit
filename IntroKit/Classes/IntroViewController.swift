@@ -36,6 +36,7 @@ public class IntroViewController: UIViewController {
     
     var shouldShowButtons: Bool!
     var shouldShowSkipLabel:Bool!
+    var callBack: ((result: Bool) -> Void)!
     
     /*pointer to the color and text index*/
     var index:Int = 0{
@@ -102,7 +103,9 @@ public class IntroViewController: UIViewController {
             {
                 self.index = self.index - 1
                 rightBtnOutlet.hidden = true
-                print("Overflow")
+                self.dismissViewControllerAnimated(true, completion: { 
+                  self.callBack(result: true);
+                })
                 return
             }
         }
