@@ -47,7 +47,7 @@ public class IntroViewController: UIViewController {
             }
         }
     }
-        
+    
     @IBOutlet weak var rightBtnOutlet: UIButton!
     @IBOutlet weak var leftBtnOutlet: UIButton!
     @IBOutlet weak var swipeLabel: UILabel!
@@ -71,6 +71,9 @@ public class IntroViewController: UIViewController {
     
     public override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        if let _ = self.navigationController{
+            self.navigationController?.navigationBar.hidden = true
+        }
         introLabel.text = textStrings![index]
         backgroundView.backgroundColor = arrayOfColors![index]
         expandingView.backgroundColor = arrayOfColors![index]
@@ -103,9 +106,15 @@ public class IntroViewController: UIViewController {
             {
                 self.index = self.index - 1
                 rightBtnOutlet.hidden = true
-                self.dismissViewControllerAnimated(true, completion: {
-                  self.callBack(result: true);
-                })
+                if let _ = self.navigationController{
+                    self.callBack(result: true)
+                    self.navigationController?.popViewControllerAnimated(false)
+                }
+                else{
+                    self.dismissViewControllerAnimated(true, completion: {
+                        self.callBack(result: true)
+                    })
+                }
                 return
             }
         }
@@ -158,5 +167,5 @@ public class IntroViewController: UIViewController {
         leftBtnOutlet.hidden = false
         rightBtnOutlet.hidden = false
     }
-
+    
 }

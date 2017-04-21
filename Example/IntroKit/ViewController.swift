@@ -20,12 +20,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startIntroTapped(sender: AnyObject) {
-        let viewController = IntroKit.fireup(["Get Awesome iOS applications","Built keeping UI/UX in mind","Applications that will make you fall in love","at pseudocode.in"]) { (result) in
+        let viewController = IntroKit.fireup(["Get Awesome iOS applications","Built keeping UI/UX in mind","Applications that will make you fall in love","at mobly.in"]) { (result) in
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let endViewController = storyboard.instantiateViewControllerWithIdentifier("EndViewController") as! EndViewController
-            self.presentViewController(endViewController, animated: true, completion: nil)
+            self.navigationController?.viewControllers = [endViewController];
         }
-        presentViewController(viewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     

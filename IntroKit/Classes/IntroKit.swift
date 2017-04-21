@@ -10,7 +10,7 @@ import Foundation
 
 public class IntroKit
 {
-    public class func fireup(textArray:[String],arrayOfColors:[UIColor]? = nil, shouldShowButtons: Bool? = true, shouldShowSkipLabel: Bool? = true, dataDictionary: Dictionary<String,AnyObject>? = nil, completion: (result: Bool) -> Void) ->
+    public class func fireup(textArray:[String],arrayOfColors:[UIColor]? = nil, shouldShowButtons: Bool? = true, shouldShowSkipLabel: Bool? = true, completion: (result: Bool) -> Void) ->
         IntroViewController{
             let storyboard = UIStoryboard(name: "Introboard", bundle: NSBundle(forClass: IntroViewController.self))
             let viewController = storyboard.instantiateViewControllerWithIdentifier("IntroViewController") as! IntroViewController

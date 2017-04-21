@@ -9,11 +9,10 @@
 Pod::Spec.new do |s|
   s.name             = 'IntroKit'
   s.version          = '1.0'
-  s.summary          = 'A short description of IntroKit.'
+  s.summary          = 'A basic straight-forward easy to use lib for tutorials'
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  #s.description      = <<-DESC 
+
 
   s.homepage         = 'https://github.com/sumitmukhija/IntroKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
