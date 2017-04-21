@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import IntroKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        let viewController = IntroKit.fireup(["Psuedocode.in","Sumit Mukhija"])
+        presentViewController(viewController, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

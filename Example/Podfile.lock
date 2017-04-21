@@ -1,5 +1,5 @@
 PODS:
-  - IntroKit (0.1.0)
+  - IntroKit (1.0)
 
 DEPENDENCIES:
   - IntroKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IntroKit: 023a3410953b9bdc0ccc5b49058d5b992c5367c8
+  IntroKit: 4d62152f2a7abc15551efe38e34eed25fc9364bd
 
 PODFILE CHECKSUM: 38d5fd3512fd296536fb26ffec05ac2b1d422dbb
 
