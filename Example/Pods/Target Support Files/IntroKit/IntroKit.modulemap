@@ -1,0 +1,6 @@
+framework module IntroKit {
+  umbrella header "IntroKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

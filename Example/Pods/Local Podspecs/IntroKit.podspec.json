@@ -1,0 +1,22 @@
+{
+  "name": "IntroKit",
+  "version": "0.1.0",
+  "summary": "A short description of IntroKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sumitmukhija/IntroKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sumitmukhija": "sumit@jova.io"
+  },
+  "source": {
+    "git": "https://github.com/sumitmukhija/IntroKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "IntroKit/Classes/**/*"
+}
