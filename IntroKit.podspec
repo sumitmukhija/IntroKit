@@ -8,10 +8,10 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IntroKit'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = 'A basic straight-forward easy to use lib for tutorials'
 
-  #s.description      = <<-DESC 
+  #s.description      = <<-DESC
 
 
   s.homepage         = 'https://github.com/sumitmukhija/IntroKit'
@@ -24,8 +24,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'IntroKit/Classes/**/*'
-  
-  s.resource_bundles = {
-  'IntroKit' => ['IntroKit/Assets/*{.storyboard,.xcassets}']
-  }
+
+  s.resources = 'IntroKit/Assets/*{.storyboard,.xcassets}'
 end
